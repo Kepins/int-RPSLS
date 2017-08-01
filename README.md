@@ -8,9 +8,9 @@ Rock, Paper, Scissors is a hand game usually played between two people, in which
 
 | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/460px-Rock-paper-scissors.svg.png" alt="RPS" style="width: 500px;"/> |
 |:--:|
-| Scissors cuts Paper
-Paper covers Rock
-Rock crushes Scissors |
+| Scissors cuts Paper |
+| Paper covers Rock |
+| Rock crushes Scissors |
 
 ## Rock Paper Scissors Lizard Spock
 
@@ -18,16 +18,16 @@ Rock, Paper, Scissors, Lizard, Spock is an expansion to RPS. The picture below d
 
 | <img src="https://data2.cupsell.pl/upload/generator/10029/640x420/35503_print-trimmed-1.png" alt="RPSLS" style="width: 500px;"/> |
 |:--:| 
-| Scissors cuts Paper
-Paper covers Rock
-Rock crushes Lizard
-Lizard poisons Spock
-Spock smashes Scissors
-Scissors decapitates Lizard
-Lizard eats Paper
-Paper disproves Spock
-Spock vaporizes Rock
-(and as it always has) Rock crushes Scissors |
+| Scissors cuts Paper |
+| Paper covers Rock |
+| Rock crushes Lizard |
+| Lizard poisons Spock |
+| Spock smashes Scissors |
+| Scissors decapitates Lizard |
+| Lizard eats Paper |
+| Paper disproves Spock |
+| Spock vaporizes Rock |
+| (and as it always has) Rock crushes Scissors |
 
 
 ## Task
