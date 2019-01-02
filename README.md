@@ -41,8 +41,8 @@ Your task is to implement both variants of the game with the following flow:
 5. user chooses whether he wants to play again: if so, go back to `1.`, else end program.
 
 ### Requirements:
-- the code should be written in Python 3.5 or Python 3.6,
+- the code should be written in Python 3.5+
 - whole game should be designed according to OOP paradigm,
 - enums are widely appreciated,
-- functions should be covered with unit tests (preferably with `unittest` framework),
+- functions should be covered with unit tests (preferably with `pytest` framework),
 - whole program ought to be consistent with PEP8 (adding `pylint` would be great for this purpose).
