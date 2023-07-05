@@ -1,9 +1,10 @@
 import functools
+from enum import Enum
 
 from UserInput.AnswerOption import AnswerOption
 
 
-def get_decision(question: str, answers: list[AnswerOption]):
+def get_decision(question: str, answers: list[AnswerOption]) -> Enum:
     # read input from user
     user_input = input(question)
     # all valid user inputs that can be inserted
