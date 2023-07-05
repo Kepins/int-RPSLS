@@ -3,3 +3,6 @@
 
 # virtual environment
 .venv/
+
+# any __pycache__ files
+*__pycache__*
