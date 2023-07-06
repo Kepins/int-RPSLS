@@ -3,5 +3,7 @@ from Figures.Figure import Figure
 
 
 class Scissors(Figure):
+    name = "Scissors"
+
     def __init__(self):
         super().__init__(FiguresEnum.SCISSORS, [FiguresEnum.PAPER, FiguresEnum.LIZARD])
