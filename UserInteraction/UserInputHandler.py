@@ -13,7 +13,8 @@ class UserInputHandler:
         # read input from user
         user_input = input(self.question)
         # all valid user inputs that can be inserted
-        valid_decisions = functools.reduce(lambda res, a: res + a, [a.matching_inputs for a in self.answers])
+        valid_decisions = functools.reduce(lambda res, a: res + a,
+                                           [a.matching_inputs for a in self.answers])
 
         # loop until user inserts valid input
         while user_input not in valid_decisions:
@@ -23,4 +24,5 @@ class UserInputHandler:
         for answer in self.answers:
             if user_input in answer.matching_inputs:
                 return answer.return_value
-
+        # should never be reached
+        return None

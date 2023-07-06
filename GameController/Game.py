@@ -1,6 +1,6 @@
+import random
 from Enums.GameResultEnum import GameResultEnum
 from Figures.Figure import Figure
-import random
 
 
 class Game:
