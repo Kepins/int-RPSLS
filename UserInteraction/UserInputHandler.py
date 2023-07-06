@@ -24,4 +24,5 @@ class UserInputHandler:
         for answer in self.answers:
             if user_input in answer.matching_inputs:
                 return answer.return_value
-
+        # should never be reached
+        return None
