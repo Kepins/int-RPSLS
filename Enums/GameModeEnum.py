@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class GameMode(Enum):
+class GameModeEnum(Enum):
     # Rock Paper Scissors
     RPS = 1
     # Rock Paper Scissors Lizard Spock
