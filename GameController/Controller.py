@@ -2,9 +2,10 @@ from Enums.GameModeEnum import GameModeEnum
 from Enums.GameRestartEnum import GameRestartEnum
 from GameController.GameRPS import GameRPS
 from GameController.GameRPSLS import GameRPSLS
-from UserInput.ExtendedVersionHandler import ExtendedVersionHandler
-from UserInput.FigureChoiceHandler import FigureChoiceHandler
-from UserInput.RestartGameHandler import RestartGameHandler
+from UserInteraction.ExtendedVersionHandler import ExtendedVersionHandler
+from UserInteraction.FigureChoiceHandler import FigureChoiceHandler
+from UserInteraction.RestartGameHandler import RestartGameHandler
+from UserInteraction.ResultDisplyer import ResultDisplayer
 
 
 class Controller:
@@ -28,7 +29,6 @@ class Controller:
 
             game.set_user_choice(figure_choice_handler.get_decision())
             game.set_opponent_choice()
-            print(game.get_opponent_choice())
-            print(game.get_result())
+            ResultDisplayer(game.user_choice, game.opponent_choice, game.get_result()).display()
 
             is_playing = self.restart_game_handler.get_decision()
