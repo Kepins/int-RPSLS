@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from Enums.FiguresEnum import FiguresEnum
+from Enums.GameResultEnum import GameResultEnum
 
 
 class Figure:
@@ -8,7 +9,9 @@ class Figure:
         self.figure = figure
         self.wins_with = wins_with
 
-    def beats(self, other: Figure):
+    def beats(self, other: Figure) -> GameResultEnum:
         if other.figure in self.wins_with:
-            return True
-        return False
+            return GameResultEnum.WIN
+        if self.figure == other.figure:
+            return GameResultEnum.TIE
+        return GameResultEnum.LOSS
