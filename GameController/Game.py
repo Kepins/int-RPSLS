@@ -1,5 +1,6 @@
+from Figures.Figure import Figure
+
+
 class Game:
-    def __init__(self, figures, truth_table):
+    def __init__(self, figures: list[Figure]):
         self.figures = figures
-        self.truth_table = truth_table
-        print(figures)
