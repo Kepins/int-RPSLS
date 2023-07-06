@@ -1,7 +1,7 @@
 import functools
 from typing import Any
 
-from UserInput.AnswerOption import AnswerOption
+from UserInteraction.AnswerOption import AnswerOption
 
 
 class UserInputHandler:
