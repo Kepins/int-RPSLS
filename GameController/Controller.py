@@ -1,5 +1,4 @@
-from Enums.FiguresRPSLSEnum import FiguresRPSLSEnum
-from Enums.FiguresRPSEnum import FiguresRPSEnum
+from Enums.FiguresEnum import FiguresEnum
 from Enums.GameModeEnum import GameModeEnum
 from Enums.GameRestartEnum import GameRestartEnum
 from GameController.Game import Game
@@ -19,9 +18,10 @@ class Controller:
 
             game = None
             if game_mode == GameModeEnum.RPS:
-                game = Game(list(FiguresRPSEnum), [])
+                game = Game([FiguresEnum.ROCK, FiguresEnum.PAPER, FiguresEnum.SCISSORS], [])
             elif game_mode == GameModeEnum.RPSLS:
-                game = Game(list(FiguresRPSLSEnum), [])
+                game = Game([FiguresEnum.ROCK, FiguresEnum.PAPER, FiguresEnum.SCISSORS,
+                             FiguresEnum.LIZARD, FiguresEnum.SPOCK], [])
 
             is_playing = get_decision("Do you want to play again?[y/n]: ",
                                       [AnswerOption(['y', 'Y'], GameRestartEnum.PLAY),
