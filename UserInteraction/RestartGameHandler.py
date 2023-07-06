@@ -1,6 +1,6 @@
 from Enums.GameRestartEnum import GameRestartEnum
-from UserInput.AnswerOption import AnswerOption
-from UserInput.UserInputHandler import UserInputHandler
+from UserInteraction.AnswerOption import AnswerOption
+from UserInteraction.UserInputHandler import UserInputHandler
 
 
 class RestartGameHandler(UserInputHandler):

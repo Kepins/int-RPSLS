@@ -1,6 +1,6 @@
 from Enums.GameModeEnum import GameModeEnum
-from UserInput.AnswerOption import AnswerOption
-from UserInput.UserInputHandler import UserInputHandler
+from UserInteraction.AnswerOption import AnswerOption
+from UserInteraction.UserInputHandler import UserInputHandler
 
 
 class ExtendedVersionHandler(UserInputHandler):

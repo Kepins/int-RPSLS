@@ -1,6 +1,6 @@
 from Figures.Figure import Figure
-from UserInput.AnswerOption import AnswerOption
-from UserInput.UserInputHandler import UserInputHandler
+from UserInteraction.AnswerOption import AnswerOption
+from UserInteraction.UserInputHandler import UserInputHandler
 
 
 class FigureChoiceHandler(UserInputHandler):
