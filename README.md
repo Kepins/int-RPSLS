@@ -46,3 +46,10 @@ Your task is to implement both variants of the game with the following flow:
 - enums are widely appreciated,
 - functions should be covered with unit tests (preferably with `pytest` framework),
 - whole program ought to be consistent with PEP8 (adding `pylint` would be great for this purpose).
+
+## How to run
+
+
+1. Create virtual environment from requirements.txt: python3 -m venv .venv
+2. Activate virtual environment: source .venv/bin/activate
+3. Run main.py: python main.py
