@@ -9,10 +9,15 @@ from UserInteraction.ResultDisplyer import ResultDisplayer
 
 
 class Controller:
+    """
+        Handles flow of the game.
+    """
+
     extended_version_handler = ExtendedVersionHandler()
     restart_game_handler = RestartGameHandler()
 
     def start(self) -> None:
+        """Start the main loop of the game"""
 
         # player wants to play until is_playing is set to GameRestart.END_PROGRAM
         is_playing = GameRestartEnum.PLAY

@@ -5,11 +5,15 @@ from UserInteraction.AnswerOption import AnswerOption
 
 
 class UserInputHandler:
+    """Class for used for basic CLI input"""
+
     def __init__(self, question: str, answers: list[AnswerOption]):
         self.question = question
         self.answers = answers
 
     def get_decision(self) -> Any:
+        """Displays the question and ensures that one of answers is returned"""
+
         # read input from user
         user_input = input(self.question)
         # all valid user inputs that can be inserted

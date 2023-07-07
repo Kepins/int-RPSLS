@@ -3,6 +3,7 @@ from Figures.Figure import Figure
 
 
 class Lizard(Figure):
+    """Lizard figure"""
     name = "Lizard"
 
     def __init__(self):

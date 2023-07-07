@@ -3,12 +3,14 @@ from Figures.Figure import Figure
 
 
 class ResultDisplayer:
+    """Class used for displaying game result"""
     def __init__(self, user_decision: Figure, opponent_decision: Figure, result: GameResultEnum):
         self.user_decision = user_decision
         self.opponent_decision = opponent_decision
         self.result = result
 
     def display(self):
+        """Display result"""
         if self.result == GameResultEnum.WIN:
             print(f"You won choosing {self.user_decision.name} "
                   f"against {self.opponent_decision.name}.")

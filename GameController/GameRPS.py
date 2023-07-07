@@ -5,5 +5,8 @@ from GameController.Game import Game
 
 
 class GameRPS(Game):
+    """
+        Game with Rock, Paper and Scissors
+    """
     def __init__(self):
         super().__init__([Rock(), Paper(), Scissors()])
