@@ -33,15 +33,19 @@ def test_doesnt_want_extended_version2():
         assert handler.get_decision() == GameModeEnum.RPS
 
 
-# def test_wrong_input_than_want():
-#     handler = ExtendedVersionHandler()
-#
-#     with mock.patch.object(builtins, 'input', lambda _: 's\ny'):
-#         assert handler.get_decision() == GameModeEnum.RPSLS
-#
-#
-# def test_wrong_input_than_dont_want():
-#     handler = ExtendedVersionHandler()
-#
-#     with mock.patch.object(builtins, 'input', lambda _: 'random lineN'):
-#         assert handler.get_decision() == GameModeEnum.RPS
+def test_wrong_input_than_want():
+    handler = ExtendedVersionHandler()
+
+    input_iter = iter(['bad input', 'y'])
+
+    with mock.patch.object(builtins, 'input', lambda _: next(input_iter)):
+        assert handler.get_decision() == GameModeEnum.RPSLS
+
+
+def test_wrong_input_than_dont_want():
+    handler = ExtendedVersionHandler()
+
+    input_iter = iter(['bad input', 'nasdaq', 'N'])
+
+    with mock.patch.object(builtins, 'input', lambda _: next(input_iter)):
+        assert handler.get_decision() == GameModeEnum.RPS
