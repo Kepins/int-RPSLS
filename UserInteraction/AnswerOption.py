@@ -2,6 +2,9 @@ from typing import Any
 
 
 class AnswerOption:
+    """
+        One answer option used with its return value
+    """
     def __init__(self, matching_inputs: list[str], return_value: Any):
         # if user input is one of strings in matching_inputs
         # then option return_value will be returned

@@ -7,5 +7,8 @@ from GameController.Game import Game
 
 
 class GameRPSLS(Game):
+    """
+        Game with Rock, Paper, Scissors, Lizard and Spock
+    """
     def __init__(self):
         super().__init__([Rock(), Paper(), Scissors(), Lizard(), Spock()])

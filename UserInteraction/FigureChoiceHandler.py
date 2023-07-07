@@ -4,6 +4,10 @@ from UserInteraction.UserInputHandler import UserInputHandler
 
 
 class FigureChoiceHandler(UserInputHandler):
+    """
+        Questions user about what figure he wants to choose
+    """
+
     def __init__(self, figures: list[Figure]):
         question = "What figure do you want to choose?\n"
         answers = []
