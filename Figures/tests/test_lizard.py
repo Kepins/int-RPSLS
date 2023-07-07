@@ -39,4 +39,3 @@ def test_ties_against_lizard():
     lizard = Lizard()
     lizard2 = Lizard()
     assert lizard.beats(lizard2) == GameResultEnum.TIE
-
